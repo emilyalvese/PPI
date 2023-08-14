@@ -1,2 +1,2 @@
 3) O que diferencia um <button> de uma <input type=”button”> de um <input type=”submit”>?
-R: type="submit" faz o submit de uma form em que esse botão estiver inserido; enquanto que o type="button" não tem nenhuma ação por defeito
+R: Um <button> realiza uma ação definida pelo programador quando clicado, enquanto o <input type=”button”> pode ser clicado mas não realiza nenhuma função. Já o <input type=”submit”> faz a submissão dos campos do form em que esse botão estier contido.
