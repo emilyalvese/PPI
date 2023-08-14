@@ -1,0 +1,5 @@
+4) Qual a tag para criação de links documentos HTML internos e externos? Como podemos utilizar para
+referenciar um documento na web?
+R: Para inserir um url, usamos a tag <input type="url" com seus atributos e métodos para a devida inserção de um url no formulário.
+    Ex:
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://." size="30" required>

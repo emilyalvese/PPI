@@ -1,0 +1,2 @@
+3) O que diferencia um <button> de uma <input type=”button”> de um <input type=”submit”>?
+R: type="submit" faz o submit de uma form em que esse botão estiver inserido; enquanto que o type="button" não tem nenhuma ação por defeito

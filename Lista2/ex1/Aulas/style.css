@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+input{
+    color:blue;
+}
+p:nth-child(){
+    background-color: aqua;
+}
+
+body{
+    background-color: pink;
+}
+body:hover{
+    background-color: blue;
+}
+
+#p01{
+    color: blue;
+}
+
+.comborda{
+    border: 1px solid royalblue;
+}
+
+/*Seletor filho*/
+div> p{
+    background-color: aliceblue;
+}
+
+/*Seletor irmão*/
+div~ p{
+    background-color: pink;
+}
+
+/*Seletor somente irmão direto*/
+div + p{
+    background-color: darkgreen;
+}

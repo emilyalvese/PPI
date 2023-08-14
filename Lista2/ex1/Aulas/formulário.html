@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="txtnome">Nome</label>
+            <input type="text" name="name" id="txtnome" value="Emily"/>
+            <br>    
+            <label class="comborda" for="email">E-mail</label>
+            <input type="text" name="txtemail" id="email"/>
+            <br>
+            <input type="button" value="Meu Botão"/>
+            <br>
+            <input type="date"/>
+            <input type="submit" name="birthDate" id="birth"/>
+            <br>
+            <label for="meeting-time">Choose a time for your appointment</label>
+            <input
+                type="datetime-local"
+                id="meeting-time"
+                name="dateTime"
+            />
+            <br>
+            <label for="email">Entre com seu servidor.com.br email:</label>
+            <input type="email" id="email" pattern="@gmail.com" size="30" required/>
+            <br>
+            <label for="avatar">Escolha uma imagem:</label>
+            <input type="hidden" id="avatar" name="avatar" accept="image/jpeg"/>
+            <br>
+            <input type="image" id="image" alt="Login" src="/media/examples"/>
+            <br>
+            <label for="tentacles">Number of tentacles (10-100):</label>
+            <input type="number" id="tentacles" name="tentacles" min="10" maz="100"/>
+            <br>
+            <!--  -->
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"/>
+            </div>
+            <div>
+                <label for="pass">Pasword (8 characters minimum):</label>
+                <input type="password" id="pass" name="password" minlength="8" required/>
+            </div>
+            <input type="submit" value="Sign in"/>
+            <br>
+            <!-- nao sei -->
+            <div class="controls"></div>
+            ..
+            <input type="reset" value="Reset"/>
+            <input type="submit" value="Submit"/>
+            <br>
+            <!-- Controle de som -->
+            <p id="p01">Audio settings:</p>
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11"/>
+                <label for="volume">Volume</label>
+            </div>
+            <div>
+                <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10">
+                <label for="cowbell">Cowbell</label>
+            </div>
+            <br>
+            <!-- Pesquisa de site -->
+            <label for="site-search">Search the site:</label>
+            <input type="search" id="site-search" name="q"/>
+            <button>Search</button>
+            <br>
+            <!-- inserir telefone com máscara -->
+            <label for="phone">Telephone: </label>
+            <input type="tel" pattern="\(\d(2)\) \d(4)-\d(4)" id="phone" name="phone" required/>
+            <br>
+            <small>Format: (47)99999-9999</small>
+            <br>
+            <!-- Inserir url -->
+            <label for="url">Enter an URL: </label>
+            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://." size="30" required>
+            <br>
+            <!-- Seleção de semana -->
+            <label for="week">Choose a week in May or June 2018:</label>
+            <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+            <br>
+            <!-- Combobox -->
+            <label for="browsers">Choose a browser:</label>
+            <input list="browsers"/>
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+            </datalist>
+
+            <div>
+                <p  id="p01">blablabla</p>
+            </div>
+            <p>zbdzshsfh</p>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,2 @@
+5) O que o trecho de código no documento faz?
+R: O código está referenciando uma imagem e mostrando as coordenadas dos 3 elementos no mapa, cada um com um formato, coordenada, nome e link.
