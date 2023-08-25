@@ -1,0 +1,64 @@
+5) Enumere ao menos 20 propriedades CSS e crie um pequeno exemplo com elas
+R: color, font-size, background-color, margin, padding, border, text-align, font-weight, display, width, height, float, position, text-decoration, border-radius, box-shadow,  background-image, line-heigt, opacity, transform. 
+
+Ex:
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Regras CSS com 20 propriedas diferentes</h1>
+    <p>blbalbalbalbala <a href="#">link</a>.</p>
+    <div class="box">div com uma classe</div>
+    <img src="image.jpg" alt="Imagem" />
+</body>
+</html>
+
+/* styles.css */
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: blue;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0.8;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(15deg);
+}

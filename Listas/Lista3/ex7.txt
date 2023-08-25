@@ -1,0 +1,2 @@
+7) Na questão anterior, o que foi necessário para alinha o texto ao centro.
+R: Foi necessário o uso da propriedade "text-align" com o parâmetro "center".

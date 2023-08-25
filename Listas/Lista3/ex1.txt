@@ -1,0 +1,11 @@
+1) O que é uma regra CSS?, propriedade? qual a sintaxe de um arquivo CSS? E como podemos incorporar
+CSS aos nossos documentos HTML. 
+R: É um conjunto de parâmetros e definições que formam a estilização de elementos em uma página HTML. Já uma propriedade CSS é um atributo específico que define a stilização de um elemento HTML (ex: color, font-sie, etc.). Por outro lado, a sintaxe de um arquilo CSS é a seguinte:
+seletor {
+    propriedade: valor;
+}
+sendo o seletor o identificador de a quais elementos da página a regra se aplica e o valor sendo correspndente a propriedade indicada.
+Por fim, as formas de incorporar CSS ao documento HTML são:
+Inline: a estilização é realizada dentro da tag da linha com o parâmetro "style".
+No cabeçalho: é declarado um bloco <style> na tag <head> e dentro dele são definidas as rgras CSS.
+Arquivo externo: é criado um arquivo "styles.class" no qual são declaradas as regras CSS para o documento HTML.

@@ -1,0 +1,98 @@
+11) Acesse o site https://flukeout.github.io/ explique todos os níveis.
+R: 
+
+1- plate 
+pois plate seleciona todos os elementos <plate>.
+
+2- bento
+pois bento seleciona todos os elementos <bento>.
+
+3- #fancy
+pois selecionei os pratos a prtir de seu id.
+
+4- plate apple
+pois referencia o <plate> em que a <apple> está dentro.
+
+5- #fancy pickle
+pois seleciona o <pickle> a partir do id do <plate> em que ele está dentro.
+
+6- *.small
+pois utiliza o seletor universal (*) para selecionar todas as <apple> da class .small
+
+7- orange.small
+pois seleciona todas as <orange> da class .small
+
+8- bento orange.small
+pois seleciona todas as <orange> da class .small que se encontram dentro de um <bento>
+
+9- plate, bento
+pois seleciona todos os <plate> E <bento>
+
+10- *
+pois seleciona todos os elementos
+
+11- plate *
+pois seeciona tudo dentro de todos os <plate>
+
+12- plate + apple
+pois seleciona todas as <apple> que estão em enncontro direto com um <plate>
+
+13- bento ~ pickle
+pois seleciona todos os <pickle> que seguem um <plate>
+
+14- plate > apple
+pois seleciona a <apple> que está diretamente ligada ao <plate>
+
+15- orange:first-child
+pois seleciona o primeiro child element <orange>, ou seja, o que está ligado a outros
+
+16- plate *:only-child
+pois seleciona todos os elementos que são únicos em um <plate>
+
+17- .small:last-child
+pois seleciona todos os elementos da classe .small que estão dentro de outros elemenos.
+
+18- plate:nth-child(3)
+pois seleciona o terceiro <plate> filho de um outro elemento.
+
+19- bento:nth-child(2)
+pois seleciona o primeiro <bento> filho de outro elemento de trás pra frente.
+
+20- apple:first-of-type
+pois seleciona o pirmeiro eemento do tipo <apple>
+
+21- plate:nth-of-type(even)
+pois seleciona todos os elementos de tipo <plate> e pares na sequuência de elementos.
+
+22- plate:nth-of-type(2n+3)
+pois seleciona todos os segundos elementos <plate> começando pelo terceiro elemento da sequência.
+
+23- plate apple:only-of-type
+pois seleciona todo único elemento <apple> dentro de um <plate>
+
+24- *.small:last-of-type
+pois seleciona todos os últimos elemetnos da classe .small na sequência.
+
+25- bento:empty
+pois selecioa todos os <bento> que não possuem nenhum elemento dentro de si.
+
+26- apple:not(.small)
+pois seleciona todas as <apple> que não pertencem a classe.small
+
+27- [for]
+pois seleciona todos os elementos que possuem um for=""
+
+28- plate[for]
+pois seleciona todos os <plate> que possuem um for=""
+
+29- [for="Vitaly"]
+pois seleciona todos os elementos que possuem um for="Vitaly"
+
+30- [for^="Sa"]
+pois seleciona todos os itens que possuem um for="" com atributos que começam com "Sa".
+
+31- [for$="ato"]
+pois seleciona todos os itens que possuem um for="" com atributos que terminam com "ato".
+
+32- [for*="obb"]
+pois seleciona todos os itens que possuem um for="" com atributos que contém "obb".

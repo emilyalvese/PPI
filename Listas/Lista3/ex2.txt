@@ -1,0 +1,47 @@
+2) Em que pontos do código podemos definir uma regra css? Como isso impacta a definição das
+propriedades?. Apresente exemplos de uso e explique. 
+R: Podemos definir uma regra css na linha, no próprio elemento, no cabeçalho da ágina e em um arquivo externo. Dependendo do local as regras devem ser definidas com estruturas diferentes. 
+Ex: 
+No cabeaçlho:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de CSS Interno</title>
+    <style>
+        h1 {
+            color: green;
+        }
+        p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oi prof</h1>
+    <p>Texto com fonte 14</p>
+</body>
+
+
+In line: 
+<p style="color: green; font-size: 14px;">Texto com cor verde e fonte 14</p>
+
+
+Documento externo:
+h1 {
+    color: green;
+}
+
+p {
+    font-size: 14px;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Oi prof</h1>
+    <p>Texto fonte 14</p>
+</body>
+</html>

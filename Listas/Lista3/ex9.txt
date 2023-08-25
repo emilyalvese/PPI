@@ -1,0 +1,3 @@
+9) Explique o que é a propriedade display e as opções inline, block e inline-block.
+R: A propriedade display define a disposição dos elementos na página web afetando seu posicionamento no layout.
+A opção inline agrupa os elementos um ao lado do outro dentro de uma linha pois eles não causam quebra de linha. Já a opção block dispõe os elementos um abaixo do outro pois eles ocupam toda a largura da página e causam quebra de linha. Por fim, a opção inline-block permite os elementos terem propriedades de blloco mas os mantém em linha comos demais elementos.

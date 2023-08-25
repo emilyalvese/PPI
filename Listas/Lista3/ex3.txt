@@ -1,0 +1,2 @@
+3) Explique as vantagens de manter a estilização em uma linguagem que não HTML.
+R: Existem diversas vantagens em manter a estilização em uma linguagem separada da HTML, como o CSS, sendo algumas delas a maior organização de código e uma melhor manutenção dele. Além disso, outra vantagem é a reutilizaão de código, podendo as regras serem utilizadas em vários arquivos HTML, evitando portanto a redundância de código.

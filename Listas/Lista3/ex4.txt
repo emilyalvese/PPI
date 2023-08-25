@@ -1,0 +1,8 @@
+4) Sobre seletores CSS, como uma regra CSS pode ser associada a elementos HTML? Explique com
+exemplo e completude. 
+R: As regras podem ser associadas aos elementos HTML por meio de seetores, os quais indicam os elementos aos quais a regra CSS descrita deve ser aplicada.
+Ex: 
+h1 {
+    color: blue;
+}
+ O seletor "h1" indica que a regra deve ser aplicadas em todos os elementos h1 do documento HTML.
