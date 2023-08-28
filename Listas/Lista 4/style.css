@@ -1,0 +1,36 @@
+.div {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+}
+
+#div1{
+    background-color: red;
+    top: 0%;
+    left: 0%;
+}
+
+#div2{
+    background-color: green;
+    top: 100%;
+    left: 0%;
+}
+
+#div3{
+    background-color: purple;
+    top: 0%;
+    right: 0%;
+}
+
+#div4{
+    background-color: yellow;
+    top: 100%;
+    right: 0%;
+}
+
+#div5{
+    background-color: grey;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
