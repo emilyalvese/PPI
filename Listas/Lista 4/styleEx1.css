@@ -1,0 +1,25 @@
+.model-box {
+    /*largura da caixa*/
+    width: 400px;
+    /*espaço entre a borda e o content do model box*/
+    padding: 30px;
+    /*borda interna*/
+    border: 5px solid rgb(8, 8, 95);
+    /*borda/linha externa*/
+    outline: 4px solid hsl(268, 81%, 35%);
+  }
+
+  #div1 {
+    font-size: 22px;
+    /*distância entre a div e a parte de baixo da borda*/
+    padding-bottom: 10px;
+    /*definição da parte de baixo da borda*/
+    border-bottom: 1px solid rgba(128, 128, 128, 0.589);
+  }
+
+  #div2 {
+    font-size: 16px;
+    color: black;
+    /*distância da div até o topo da margem*/
+    margin-top: 10px;
+  }

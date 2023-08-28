@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+
+    <style>
+        #div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: fixed;
+            border-radius: 50%;
+            animation: moveFoguete 3s linear infinite;
+        }
+        @keyframes moveFoguete {
+            0% {
+                top: 600px;
+            }
+            25% {
+                top: 400px;
+            }
+            50% {
+                top: 300px;
+            }
+            75% {
+                top: 200px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+        img{
+            width: 100px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <img src="foguetao.png" alt="">
+    </div>
+</body>
+</html>
