@@ -1,0 +1,12 @@
+.divs{
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+}
+
+#div1{
+    background-color: rgb(4, 4, 107);
+}
+#div2{
+    border-bottom-color: white;
+}
