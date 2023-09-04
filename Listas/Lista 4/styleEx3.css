@@ -1,0 +1,31 @@
+*{margin: 0;
+    padding: 0;}
+
+.divs{
+    display: inline-block;
+}
+
+#div1{
+    text-align: center;
+    height: 100vh;
+    width: 30%;
+    background-color: rgb(23, 23, 105);
+}
+#div2{
+    position: absolute;
+    left: 30%;
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(207, 207, 207);
+}
+
+#img1{
+    border-radius: 50%;
+    width: 80%;
+    margin: 10px;
+}
+
+#h11{
+    border-bottom: 5px;
+    border-color: rgb(255, 255, 255);
+}
