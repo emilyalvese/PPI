@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeiras</title>
+
+    <style>
+        .bandeirajapao{
+            display: flex;
+            outline: 1px solid rgb(94, 94, 94);
+            height: 300px;
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+        #bolinha{
+            background-color: red;
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+        }
+
+        .bandeirabr{
+            display: flex;
+            background-color: green;
+            outline: 1px solid rgb(94, 94, 94);
+            height: 300px;
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+        .losango{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            transform: scale(1.7, 1) rotate(-45deg);
+        }
+        .bola{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <div class="bandeirajapao">
+        <div id="bolinha"></div>
+    </div>
+    <div class="bandeirabr">
+        <div class="losango"></div>
+        <div class="bola"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <style>
+        .bandeirajapao{
+            display: flex;
+            outline: 1px solid rgb(94, 94, 94);
+            height: 300px;
+            width: 500px;
+            align-items: center;
+            justify-content: center;
+        }
+        #bolinha{
+            background-color: red;
+            border-radius: 50%;
+            height: 120px;
+            width: 120px;
+        }
+
+        .bandeiraholanda{
+            display: flex;
+            outline: 1px solid rgb(94, 94, 94);
+            flex-direction: column;
+            height: 300px;
+            width: 500px;
+        }
+        #linha1{
+            flex: 1;  
+            background-color: red;
+        }
+        #linha2{      
+            flex: 1;       
+            background-color: white;
+        }
+        #linha3{      
+            flex: 1;       
+            background-color: blue;
+        }
+
+        .bandeiraitalia{
+            display: flex;
+            outline: 1px solid rgb(94, 94, 94);
+            height: 300px;
+            width: 500px;
+        }
+        #coluna1{
+            width: 500px;           
+            background-color: green;
+        }
+        #coluna2{
+            width: 500px;           
+            background-color: white;
+        }
+        #coluna3{
+            width: 500px;           
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bandeirajapao">
+        <div id="bolinha"></div>
+    </div>
+
+    <div class="bandeiraholanda">
+        <div id="linha1"></div>
+        <div id="linha2"></div>
+        <div id="linha3"></div>
+    </div>
+
+    <div class="bandeiraitalia">
+        <div id="coluna1"></div>
+        <div id="coluna2"></div>
+        <div id="coluna3"></div>
+    </div>
+</body>
+</html>
