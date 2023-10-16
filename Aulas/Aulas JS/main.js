@@ -27,4 +27,4 @@ function somar(){
 function colorir(){
     let cor = `rgb(${r.value}, ${g.value}, ${b.value})`;
     document.body.style.backgroundColor = cor;
-}
+} 
