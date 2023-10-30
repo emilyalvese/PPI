@@ -1,0 +1,83 @@
+/* Estilize a barra lateral */
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 250px;
+    position: fixed;
+    display: block;
+    height: 100%;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+/* Ajuste o conteúdo principal */
+.content {
+    margin-left: 270px; /* Margem à direita para a barra lateral */
+    padding: 20px;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd; /* Adicione uma borda de 1px a todas as células */
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
