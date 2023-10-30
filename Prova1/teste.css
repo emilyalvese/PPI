@@ -1,11 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar content";
+    min-height: 100vh;
+}
+
 /* Estilize a barra lateral */
 .sidebar {
+    grid-area: sidebar;
     background-color: #333;
     color: white;
-    width: 250px;
-    position: fixed;
-    display: block;
-    height: 100%;
     padding: 20px;
 }
 
@@ -17,9 +22,8 @@
     margin-bottom: 10px;
 }
 
-/* Ajuste o conteúdo principal */
 .content {
-    margin-left: 270px; /* Margem à direita para a barra lateral */
+    grid-area: content;
     padding: 20px;
 }
 
@@ -30,6 +34,8 @@ body, ul {
 
 body {
     font-family: Arial, sans-serif;
+    display: flexbox;
+    justify-items: center;
 }
 
 header {
@@ -41,13 +47,17 @@ header {
     padding: 10px 20px;
 }
 
-nav ul {
+nav, ul {
     list-style: none;
 }
 
-nav ul li {
+nav, ul, li {
     display: inline;
     margin-right: 20px;
+}
+
+li{
+    color: #ddd;
 }
 
 section {
@@ -71,13 +81,21 @@ table {
     border-collapse: collapse;
 }
 
-table th, table td {
+table, th, table, td {
     border: 1px solid #ddd; /* Adicione uma borda de 1px a todas as células */
     padding: 8px;
     text-align: left;
 }
 
-table th {
+table, th {
     background-color: #333;
     color: white;
+}
+
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
 }
