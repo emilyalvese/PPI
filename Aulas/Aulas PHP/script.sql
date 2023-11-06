@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS crud;
+
+USE crud;
+
+CREATE TABLE usr (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    senha VARCHAR(100)
+);
+
+SELECT * FROM usr;
