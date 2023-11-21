@@ -2,7 +2,7 @@
 
     class Musica{
         public $id;
-        public $musica;
+        public $nome;
         public $cantora;
         public $tempo;
         public $album;
@@ -11,9 +11,16 @@
 
         }
 
-        public function setAll($id, $musica, $cantora, $tempo, $album){
+        public function setAll($id, $nome, $cantora, $tempo, $album){
             $this -> id = $id;
-            $this -> nome = $musica;
+            $this -> nome = $nome;
+            $this -> cantora = $cantora;
+            $this -> tempo = $tempo;
+            $this -> album = $album;
+        }
+
+        public function setAllNoId($nome, $cantora, $tempo, $album){
+            $this -> nome = $nome;
             $this -> cantora = $cantora;
             $this -> tempo = $tempo;
             $this -> album = $album;
@@ -23,8 +30,8 @@
             return $this -> id;
         }
 
-        public function getMusica(){
-            return $this -> musica;
+        public function getNome(){
+            return $this -> nome;
         }
 
         public function getCantora(){
