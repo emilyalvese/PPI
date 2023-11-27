@@ -1,3 +1,4 @@
+<a href="cadastro.php">Tela de listagem</a>
 <table id="musicas">
 
     <thead>
@@ -18,34 +19,14 @@
 
             foreach($musicas as $musica){
                 echo "<tr>";
-                    echo "<td>" . $musica -> getId() . "</td>";
-                    echo "<td>" . $musica -> getNome() . "</td>";
-                    echo "<td>" . $musica -> getCantora() . "</td>";
-                    echo "<td>" . $musica -> getTempo() . "</td>";
-                    echo "<td>" . $musica -> getAlbum() . "</td>";
-
-                echo '<td>
-                    <form action="../controle/Rota.php" method="post"> 
-                        <input type="text" name="id" value="' . $musicas['id'] . '" hidden>
-                        <input type="text" name="op" value="atualizar" hidden>;
-                        <input type="text" name="nome" value="' . $musicas['nome'] . '" hidden>
-                        <input type="text" name="cantora" value="' . $musicas['cantora'] . '" hidden>
-                        <input type="text" name="tempo" value="' . $musicas['tempo'] . '" hidden>
-                        <input type="text" name="album" value="' . $musicas['album'] . '" hidden>
-
-                        <input type="submit" value="Atualizar">
-                    </form>
-                </td>';
-
-                echo '<td.
-                    <form action="../controle/Rota.php" method="post"> 
-                        <input type="text" name="op" value="excluir" hidden>
-                        <input type="text" name="id" value="' . $musicas['id'] . '" hidden>
-                        <input type="submit" value="Excluir">
-                    </form>
-                </td>';
-            
-                echo "</tr>";
+                    echo "<td>" . $musica['id'] . "</td>";
+                    echo "<td><p>" . htmlspecialchars($musica['nome']) . "</p></td>";
+                    echo "<td><p>" . htmlspecialchars($musica['cantora']) . "</p></td>";
+                    echo "<td><p>" . htmlspecialchars($musica['tempo']) . "</p></td>";
+                    echo "<td><p>" . htmlspecialchars($musica['album']) . "</p></td>";
+                    echo "<td><a class='' href='../visao/editar.php?acao=editar&id=" . $musica['id'] . " '>Editar</a></td>";
+                    echo "<td><a class='' href='../visao/excluir.php?acao=excluir&id=" . $musica['id'] . " '>Excluir</a></td>";
+                    echo "</tr>";
             }
         ?>
     </tbody>

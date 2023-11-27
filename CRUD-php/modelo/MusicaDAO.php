@@ -1,7 +1,7 @@
 <?php 
 
     include_once "Musica.php";
-    include_once "Database.php";
+    include_once "../resources/Database.php";
 
     class MusicaDAO{
         public function __constructor(){}
@@ -37,6 +37,8 @@
             $stmt -> bindParam(':cantora', $cantora);
             $stmt -> bindParam(':tempo', $tempo);
             $stmt -> bindParam(':album', $album);
+
+            $stmt->execute();
         }
 
         public function update(Musica $musica){
@@ -63,9 +65,9 @@
         public function delete($id){
             $db = new Database();
             $conn = $db-> getConnection();
-            $sql = "DELETE FROM musicas WHERE id = :id";
+            $sql = "DELETE FROM musicas WHERE id = ?";
             $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':id', $id);
+            $stmt->bindParam(1, $id);
             return $stmt->execute();
         }
 
@@ -79,7 +81,16 @@
             $stmt->execute();
             if($stmt->rowCount() > 0){
                 $resultado = $stmt->fetch(PDO::FETCH_ASSOC);
-                return $resultado;
+                $musica = new Musica();
+
+                $musica->setAll(
+                    $resultado['id'],
+                    $resultado['nome'],
+                    $resultado['cantora'],
+                    $resultado['tempo'],
+                    $resultado['album']
+                );
+                return $musica;
             }else{
                 return [];
             }

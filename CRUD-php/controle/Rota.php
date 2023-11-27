@@ -16,17 +16,17 @@
                 echo("Erro ao cadastrar a música");
                 exit();
             }
+            echo $op;
 
             $nome = $_POST['nome'];
             $cantora = $_POST['cantora'];
             $tempo = $_POST['tempo'];
             $album = $_POST['album'];
-
+            
             $controller = new ControllerMusica();
             $controller -> inserirMusica($nome, $cantora, $tempo, $album);
-
-            header("Location: ../visao/listagem.php");
-        break;
+            header('Location: ../visao/listagem.php');
+            break;
 
         case 'atualizar':
             if(!isset($_POST['id']) || !isset($_POST['nome']) || !isset($_POST['cantora']) || !isset($_POST['tempo']) || !isset($_POST['album'])){
@@ -47,14 +47,14 @@
         break;
 
         case 'excluir':
-            if(!isset($_POST['id'])){
+            if (!isset($_POST['id'])) {
                 echo("Erro ao excluir a música");
                 exit();
             }
-
-            $id = $_POST["id"];
+        
+            $id = $_POST['id'];
             $controller = new ControllerMusica();
-            $controller -> deletarMusica($id);
+            $controller->deletarMusica($id);
             header("Location: ../visao/listagem.php");
             break;
     }

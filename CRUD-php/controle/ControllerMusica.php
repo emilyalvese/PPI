@@ -37,9 +37,7 @@
 
         public function deletarMusica($id){
             $dao = new MusicaDAO();
-
             $dao -> delete($id);
-            return $dao;
         }
 
         public function getMusica($id){
