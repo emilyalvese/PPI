@@ -1,13 +1,10 @@
 <?php 
-
     include_once "Musica.php";
     include_once "../resources/Database.php";
 
     class MusicaDAO{
         public function __constructor(){}
 
-
-        //SELECT *
         public function read(){
             $db = new Database();
             $conn = $db -> getConnection();
